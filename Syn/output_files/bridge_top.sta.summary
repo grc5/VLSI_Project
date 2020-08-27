@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'fsm:fsm_blk|present_state.100'
+Slack : -9.226
+TNS   : -169.287
+
+Type  : Slow 1100mV 85C Model Setup 'Hclk'
+Slack : -7.486
+TNS   : -226.864
+
+Type  : Slow 1100mV 85C Model Setup 'fsm:fsm_blk|present_state.000'
+Slack : -7.195
+TNS   : -196.388
+
+Type  : Slow 1100mV 85C Model Hold 'Hclk'
+Slack : -2.961
+TNS   : -70.329
+
+Type  : Slow 1100mV 85C Model Hold 'fsm:fsm_blk|present_state.100'
+Slack : 3.347
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'fsm:fsm_blk|present_state.000'
+Slack : 3.716
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Hclk'
+Slack : -0.724
+TNS   : -243.685
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'fsm:fsm_blk|present_state.100'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'fsm:fsm_blk|present_state.000'
+Slack : 0.313
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'fsm:fsm_blk|present_state.100'
+Slack : -9.245
+TNS   : -174.880
+
+Type  : Slow 1100mV 0C Model Setup 'fsm:fsm_blk|present_state.000'
+Slack : -7.354
+TNS   : -201.825
+
+Type  : Slow 1100mV 0C Model Setup 'Hclk'
+Slack : -7.265
+TNS   : -222.803
+
+Type  : Slow 1100mV 0C Model Hold 'Hclk'
+Slack : -3.108
+TNS   : -73.327
+
+Type  : Slow 1100mV 0C Model Hold 'fsm:fsm_blk|present_state.100'
+Slack : 3.425
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'fsm:fsm_blk|present_state.000'
+Slack : 3.795
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Hclk'
+Slack : -0.724
+TNS   : -243.808
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'fsm:fsm_blk|present_state.100'
+Slack : 0.310
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'fsm:fsm_blk|present_state.000'
+Slack : 0.333
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'fsm:fsm_blk|present_state.100'
+Slack : -4.134
+TNS   : -59.707
+
+Type  : Fast 1100mV 85C Model Setup 'Hclk'
+Slack : -3.459
+TNS   : -72.666
+
+Type  : Fast 1100mV 85C Model Setup 'fsm:fsm_blk|present_state.000'
+Slack : -2.895
+TNS   : -71.213
+
+Type  : Fast 1100mV 85C Model Hold 'Hclk'
+Slack : -0.951
+TNS   : -22.112
+
+Type  : Fast 1100mV 85C Model Hold 'fsm:fsm_blk|present_state.100'
+Slack : 1.627
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'fsm:fsm_blk|present_state.000'
+Slack : 1.870
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Hclk'
+Slack : -0.086
+TNS   : -18.526
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'fsm:fsm_blk|present_state.100'
+Slack : 0.351
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'fsm:fsm_blk|present_state.000'
+Slack : 0.371
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'fsm:fsm_blk|present_state.100'
+Slack : -3.740
+TNS   : -56.980
+
+Type  : Fast 1100mV 0C Model Setup 'Hclk'
+Slack : -2.952
+TNS   : -56.828
+
+Type  : Fast 1100mV 0C Model Setup 'fsm:fsm_blk|present_state.000'
+Slack : -2.674
+TNS   : -67.438
+
+Type  : Fast 1100mV 0C Model Hold 'Hclk'
+Slack : -0.931
+TNS   : -21.737
+
+Type  : Fast 1100mV 0C Model Hold 'fsm:fsm_blk|present_state.100'
+Slack : 1.626
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'fsm:fsm_blk|present_state.000'
+Slack : 1.835
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Hclk'
+Slack : -0.088
+TNS   : -18.969
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'fsm:fsm_blk|present_state.100'
+Slack : 0.377
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'fsm:fsm_blk|present_state.000'
+Slack : 0.387
+TNS   : 0.000
+
+------------------------------------------------------------

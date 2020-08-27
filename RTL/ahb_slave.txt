@@ -1,0 +1,119 @@
+/*//Htrans
+'define IDLE 2'b00
+'define BUSY 2'b01
+'define NONSEQ 2'b10
+'define SEQ 2'b11
+
+//Hbusrst type
+'define SINGLE 3'b000
+'define INCR 3'b001
+'define WRAP4 3'b010
+'define INCR4 3'011
+'define WRAP8 3'b100
+'define INCR8 3'b101
+'define WRAP16 3'b110
+'define INCR16 3'b111
+
+//Hresp : response signals
+'define OKAY 2'b00
+'define ERROR 2'b01
+'define RETRY 2'b10
+'define SPLIT 2'b11*/
+
+
+module ahb_slave (Hreset,Hreadyin,Htrans,Haddr,Hwdata,Hwrite,Hclk,Hresp,Valid,Hwrite_reg,Haddr1,Haddr2,Hdata1,Hdata2);
+
+input [31:0]Hwdata,Haddr;
+//input [31:0]Haddr;
+input [1:0]Htrans;
+input Hreadyin,Hwrite,Hclk,Hreset;
+input [2:0]Hsize;
+output Valid;
+output [31:0]Hdata1,Hdata2,Haddr1,Haddr2;
+output Hwrite_reg;
+//output Tempselx;
+
+parameter IDLE = 2'b00,BUSY = 2'b01,NONSEQ = 2'b10,SEQ = 2'b11;
+//parameter depth = 2^32;
+reg [1:0] present_state, next_state;
+wire [2:0]Tempselx;
+
+//reg [(width-1)] : 0] mem [(depth-1) : 0];
+
+always @(posedge Hclk, negedge Hreset)
+	begin
+	if (!Hreset)
+	//Haddr <= 0;
+	present_state <= IDLE;
+	else 
+	present_state <= next_state;
+	Haddr1 <= Haddr;
+	Haddr2 <= Haddr1;
+	//end
+
+//always @(
+	//if (Hwrite == 1)
+	//begin
+	Hdata1 <= Hwdata;
+	Hdata2 <= Hdata1;
+
+	end
+
+always @ (Htrans,present_state)
+	//present_state <= next_state;
+	//else if (Htrans) 
+	begin
+	case (present_state)
+	//begin
+	IDLE : if (Htrans(2'b01))
+	next_state = BUSY;
+	else if (Htrans(2'b10))
+	next_state = NONSEQ;
+	else if (Htrans(2'b11))
+	next_state = SEQ;
+
+	BUSY : if (Htrans(2'b00))
+	next_state = IDLE;
+	else if (Htrans(2'b10))
+	next_state = NONSEQ;
+	else if (Htrans(2'b11))
+	next_state = SEQ;
+
+	NONSEQ : if (Htrans(2'b00))
+	next_state = IDLE;
+	else if (Htrans(2'b01))
+	next_state = BUSY;
+	else if (Htrans(2'b11))
+	next_state = SEQ;
+	
+	SEQ : if (Htrans(2'b00))
+	next_state = IDLE;
+	else if (Htrans(2'b01))
+	next_state = BUSY;
+	else if (Htrans(2'b10))
+	next_state = NONSEQ;
+
+	end
+	end
+
+assign Tempselx[0] = (Haddr >= 32'h0x80000000) && (Haddr <= 32'h0x83FFFFFF);
+assign Tempselx[1] = (Haddr >= 32'h0x84000000) && (Haddr <= 32'h0x87FFFFFF);
+assign Tempselx[2] = (Haddr >= 32'h0x88000000) && (Haddr <= 32'h0x8BFFFFFF); 
+
+
+always@ (Htrans,present_state)
+
+
+Hrdata <= Hdata2;
+	//assign Hdata_1 <= 
+	end
+
+Hready = 1 // transfer complete
+else #Hclk// transfer extended max 16 wait cycles
+
+
+Hwrite = 1 
+Hwdata // data from master to slave
+else Hrdata // data from slave to master
+
+endmodule

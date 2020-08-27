@@ -1,0 +1,117 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'Hclk'
+Slack : -7.142
+TNS   : -166.692
+
+Type  : Slow 1100mV 85C Model Setup 'present_state.000'
+Slack : -5.774
+TNS   : -171.567
+
+Type  : Slow 1100mV 85C Model Hold 'Hclk'
+Slack : -2.432
+TNS   : -64.886
+
+Type  : Slow 1100mV 85C Model Hold 'present_state.000'
+Slack : 3.423
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Hclk'
+Slack : -0.724
+TNS   : -86.486
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'present_state.100'
+Slack : -0.274
+TNS   : -0.909
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'present_state.000'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'Hclk'
+Slack : -7.017
+TNS   : -160.390
+
+Type  : Slow 1100mV 0C Model Setup 'present_state.000'
+Slack : -5.756
+TNS   : -172.539
+
+Type  : Slow 1100mV 0C Model Hold 'Hclk'
+Slack : -2.441
+TNS   : -66.016
+
+Type  : Slow 1100mV 0C Model Hold 'present_state.000'
+Slack : 3.424
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Hclk'
+Slack : -0.724
+TNS   : -86.566
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'present_state.100'
+Slack : -0.353
+TNS   : -1.198
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'present_state.000'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'Hclk'
+Slack : -3.380
+TNS   : -71.158
+
+Type  : Fast 1100mV 85C Model Setup 'present_state.000'
+Slack : -2.154
+TNS   : -62.775
+
+Type  : Fast 1100mV 85C Model Hold 'Hclk'
+Slack : -0.848
+TNS   : -21.952
+
+Type  : Fast 1100mV 85C Model Hold 'present_state.000'
+Slack : 1.851
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'present_state.100'
+Slack : -0.188
+TNS   : -0.685
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Hclk'
+Slack : -0.088
+TNS   : -6.674
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'present_state.000'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'Hclk'
+Slack : -2.752
+TNS   : -53.173
+
+Type  : Fast 1100mV 0C Model Setup 'present_state.000'
+Slack : -1.996
+TNS   : -58.847
+
+Type  : Fast 1100mV 0C Model Hold 'Hclk'
+Slack : -0.813
+TNS   : -21.285
+
+Type  : Fast 1100mV 0C Model Hold 'present_state.000'
+Slack : 1.801
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Hclk'
+Slack : -0.088
+TNS   : -6.763
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'present_state.100'
+Slack : -0.065
+TNS   : -0.197
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'present_state.000'
+Slack : 0.342
+TNS   : 0.000
+
+------------------------------------------------------------

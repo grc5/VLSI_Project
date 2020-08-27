@@ -1,0 +1,7 @@
+
+State Machine - |ahb_slave|present_state
+Name present_state.SEQ present_state.NONSEQ present_state.BUSY present_state.IDLE 
+present_state.IDLE 0 0 0 0 
+present_state.BUSY 0 0 1 1 
+present_state.NONSEQ 0 1 0 1 
+present_state.SEQ 1 0 0 1 

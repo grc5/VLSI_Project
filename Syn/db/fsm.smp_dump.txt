@@ -1,0 +1,11 @@
+
+State Machine - |fsm|present_state
+Name present_state.111 present_state.110 present_state.101 present_state.100 present_state.011 present_state.010 present_state.001 present_state.000 
+present_state.000 0 0 0 0 0 0 0 0 
+present_state.001 0 0 0 0 0 0 1 1 
+present_state.010 0 0 0 0 0 1 0 1 
+present_state.011 0 0 0 0 1 0 0 1 
+present_state.100 0 0 0 1 0 0 0 1 
+present_state.101 0 0 1 0 0 0 0 1 
+present_state.110 0 1 0 0 0 0 0 1 
+present_state.111 1 0 0 0 0 0 0 1 

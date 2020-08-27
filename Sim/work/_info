@@ -1,0 +1,195 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Verilog_Labs/lab5/sim
+vahb_master
+!s110 1598413812
+!i10b 1
+!s100 Vzio>j=LDXQKM9heH7CNI2
+Z0 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Il8NiHSzaQZjXZ9fM]=k]M3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dD:/VLSI_Project/Sim
+w1598413458
+8D:\VLSI_Project\RTL\ahb_master.v
+FD:\VLSI_Project\RTL\ahb_master.v
+!i122 1911
+Z3 L0 2 181
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1598413812.000000
+!s107 D:\VLSI_Project\RTL\define.v|D:\VLSI_Project\RTL\ahb_master.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\VLSI_Project\RTL\ahb_master.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vahb_slave
+!s110 1598413809
+!i10b 1
+!s100 `fVmH?[ahIT4YRiXP]?KJ0
+R0
+IDYLEXL[0RSV;4Bn<BDK<k0
+R1
+R2
+w1598035968
+8D:\VLSI_Project\RTL\ahb_slave.v
+FD:\VLSI_Project\RTL\ahb_slave.v
+!i122 1906
+L0 2 118
+R4
+r1
+!s85 0
+31
+!s108 1598413808.000000
+!s107 D:\VLSI_Project\RTL\define.v|D:\VLSI_Project\RTL\ahb_slave.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\VLSI_Project\RTL\ahb_slave.v|
+!i113 1
+R6
+R7
+vahb_slave_tb
+Z8 !s110 1598413810
+!i10b 1
+!s100 l@O7UH_37RGaC6NE0igzN3
+R0
+I[df_8eKEkNQ7fQ<a4ND@a0
+R1
+R2
+w1597922074
+8D:/VLSI_Project/TB/ahb_slave_tb.v
+FD:/VLSI_Project/TB/ahb_slave_tb.v
+!i122 1908
+L0 1 37
+R4
+r1
+!s85 0
+31
+!s108 1598413810.000000
+!s107 D:/VLSI_Project/TB/ahb_slave_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/VLSI_Project/TB/ahb_slave_tb.v|
+!i113 1
+R6
+R7
+vapb_interface
+Z9 !s110 1598413813
+!i10b 1
+!s100 GmSOeA?186IkGKbR?1LF51
+R0
+IHoM8AFP[6Sd=dcFVB0>NB0
+R1
+R2
+w1597660147
+8D:/VLSI_Project/RTL/apb_interface.v
+FD:/VLSI_Project/RTL/apb_interface.v
+!i122 1912
+L0 1 24
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/VLSI_Project/RTL/apb_interface.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/VLSI_Project/RTL/apb_interface.v|
+!i113 1
+R6
+R7
+vbridge_top
+Z10 !s110 1598413811
+!i10b 1
+!s100 ITYF]9Y29@l8[>Fc0z>Ad0
+R0
+I>=^_c2lOAgS^C>jPeGBOc3
+R1
+R2
+w1598391669
+8D:/VLSI_Project/RTL/bridge_top.v
+FD:/VLSI_Project/RTL/bridge_top.v
+!i122 1910
+L0 1 27
+R4
+r1
+!s85 0
+31
+Z11 !s108 1598413811.000000
+!s107 D:/VLSI_Project/RTL/bridge_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/VLSI_Project/RTL/bridge_top.v|
+!i113 1
+R6
+R7
+vbridge_top_tb
+R9
+!i10b 1
+!s100 kQhOfb3L^P8aHWac_gFoJ0
+R0
+IkV[zU__?C^DZeaoin]8H_0
+R1
+R2
+w1598413805
+8D:/VLSI_Project/TB/bridge_top_tb.v
+FD:/VLSI_Project/TB/bridge_top_tb.v
+!i122 1913
+L0 3 66
+R4
+r1
+!s85 0
+31
+!s108 1598413813.000000
+!s107 D:/VLSI_Project/RTL/define.v|D:/VLSI_Project/TB/bridge_top_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/VLSI_Project/TB/bridge_top_tb.v|
+!i113 1
+R6
+R7
+vfsm
+R8
+!i10b 1
+!s100 SL<WCeo5imnf2IQ0D?28S3
+R0
+I5mhoj_RAaS94Gza<D`34P3
+R1
+R2
+w1598412418
+8D:\VLSI_Project\RTL\fsm.v
+FD:\VLSI_Project\RTL\fsm.v
+!i122 1907
+R3
+R4
+r1
+!s85 0
+31
+!s108 1598413809.000000
+!s107 D:\VLSI_Project\RTL\define.v|D:\VLSI_Project\RTL\fsm.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:\VLSI_Project\RTL\fsm.v|
+!i113 1
+R6
+R7
+vfsm_tb
+R10
+!i10b 1
+!s100 bfXG7eV^KW>3NA;dUNaU02
+R0
+I1Qn`Q5h5z^^klh<4S1=mH1
+R1
+R2
+w1597967976
+8D:/VLSI_Project/TB/fsm_tb.v
+FD:/VLSI_Project/TB/fsm_tb.v
+!i122 1909
+L0 1 17
+R4
+r1
+!s85 0
+31
+R11
+!s107 D:/VLSI_Project/TB/fsm_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/VLSI_Project/TB/fsm_tb.v|
+!i113 1
+R6
+R7

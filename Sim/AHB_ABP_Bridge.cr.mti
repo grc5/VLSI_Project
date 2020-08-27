@@ -1,0 +1,53 @@
+D:/VLSI_Project/RTL/bridge_top.v {1 {vlog -work work -stats=none D:/VLSI_Project/RTL/bridge_top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module bridge_top
+
+Top level modules:
+	bridge_top
+
+} {} {}} D:/VLSI_Project/RTL/define.v {1 {vlog -work work -stats=none D:/VLSI_Project/RTL/define.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+
+} {} {}} D:/VLSI_Project/TB/fsm_tb.v {1 {vlog -work work -stats=none D:/VLSI_Project/TB/fsm_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module fsm_tb
+
+Top level modules:
+	fsm_tb
+
+} {} {}} D:/VLSI_Project/RTL/apb_interface.v {1 {vlog -work work -stats=none D:/VLSI_Project/RTL/apb_interface.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module apb_interface
+
+Top level modules:
+	apb_interface
+
+} {} {}} D:/VLSI_Project/TB/bridge_top_tb.v {1 {vlog -work work -stats=none D:/VLSI_Project/TB/bridge_top_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module bridge_top_tb
+
+Top level modules:
+	bridge_top_tb
+
+} {} {}} D:/VLSI_Project/RTL/ahb_slave.v {1 {vlog -work work -stats=none {D:\VLSI_Project\RTL\ahb_slave.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ahb_slave
+
+Top level modules:
+	ahb_slave
+
+} {} {}} D:/VLSI_Project/RTL/fsm.v {1 {vlog -work work -stats=none {D:\VLSI_Project\RTL\fsm.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module fsm
+
+Top level modules:
+	fsm
+
+} {} {}} D:/VLSI_Project/TB/ahb_slave_tb.v {1 {vlog -work work -stats=none D:/VLSI_Project/TB/ahb_slave_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ahb_slave_tb
+
+Top level modules:
+	ahb_slave_tb
+
+} {} {}}

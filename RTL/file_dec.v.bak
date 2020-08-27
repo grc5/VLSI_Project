@@ -1,0 +1,19 @@
+//Htrans
+'define IDLE 0;
+'define BUSY 1
+'define NONSEQ 2
+'define SEQ 3
+
+//Hbusrst type
+'define SINGLE 
+'define INCR 
+'define WRAP4 
+'define INCR4 
+'define WRAP8 4
+'define INCR8 5
+'define WRAP16 6
+'define INCR16 7
+
+module file_dec ();
+
+endmodule

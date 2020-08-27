@@ -1,0 +1,54 @@
+//'include "ahb_slave"
+
+module bridge_top_tb();
+
+reg Hclk,Hreset;
+wire [31:0]Hrdata,Haddr,Hwdata,Paddr,Pwdata,Paddr_out,Pwdata_out,Prdata;
+wire [1:0]Hresp,Htrans;
+wire Hreadyout,Hreadyin,Hwrite,Pwrite,Penable,Pwrite_out,Penable_out;
+wire [2:0]Pselx,Pselx_out;
+
+//assign Hrdata = Prdata;
+
+ahb_master a_m(.Hclk(Hclk),.Hreset(Hreset),.Hreadyout(Hreadyout),.Hrdata(Hrdata),.Hresp(Hresp),.Htrans(Htrans),.Haddr(Haddr),.Hwdata(Hwdata),.Hreadyin(Hreadyin),.Hwrite(Hwrite));
+
+apb_interface apb_int(.Pwrite(Pwrite),.Penable(Penable),.Paddr(Paddr),.Pwdata(Pwdata),.Pselx(Pselx),.Pselx_out(Pselx_out),.Penable_out(Penable_out),.Paddr_out(Paddr_out),.Pwdata_out(Pwdata),.Pwrite_out(Pwrite_out),.Prdata(Prdata));
+
+bridge_top top_blk(.Hwdata(Hwdata),.Haddr(Haddr),.Htrans(Htrans),.Hreadyin(Hreadyin),.Hclk(Hclk),.Hreset(Hreset),.Hwrite(Hwrite),.Pselx(Pselx),.Paddr(Paddr),.Pwdata(Pwdata),.Penable(Penable),.Pwrite(Pwrite),.Hreadyout(Hreadyout));
+
+//.pselx_temp(Pselx),.paddr_temp(Paddr),.pwdata_temp(Pwdata),.penable_temp(Penable),.pwrite_temp(Pwrite),.hreadyout_temp(Hreadyout));
+
+//.Pselx(pselx_temp),.Paddr(paddr_temp),.Pwdata(pwdata_temp),.Penable(penable_temp),.pwrite(pwrite_temp),.Hreadyout(hreadyout_temp));
+//.Pselx(Pselx),.Paddr(Paddr),.Pwdata(Pwdata),.Penable(Penable),.Pwrite(Pwrite),.Hreadyout(Hreadyout));
+
+initial
+begin
+Hclk = 0;
+forever #10 Hclk = ~Hclk;
+end
+
+task reset();
+begin
+@(negedge Hclk)
+Hreset = 1;
+@(negedge Hclk)
+Hreset = 0;
+end
+endtask
+
+initial
+begin
+reset;
+a_m.single_write;
+#200;
+a_m.single_read;
+#200;
+end
+
+initial
+begin
+#1000 $finish;
+end
+
+
+endmodule
